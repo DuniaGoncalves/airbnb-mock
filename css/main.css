@@ -94,6 +94,7 @@ a{
 body{
     background:#EDEFED;
     margin: 0 auto;
+    max-width: 1280px;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -147,10 +148,6 @@ p {
 }
 
 
-li {
-    padding: 18.5px 15px;
-}
-
 form,
 ul,
 li{
@@ -173,9 +170,15 @@ header{
 nav a{
     color: white;
 }
-
+nav li {
+    padding: 18.5px 15px;
+}
 nav li:hover{
     background: #EDEFED;
+}
+
+nav li.help:hover{
+    background: transparent;
 }
 
 nav ul {
@@ -195,29 +198,29 @@ nav ul {
 .logo{
     width: 193px;
     height: 90px;
+    border-right: 1px solid gray;
 }
 
 .main-hero{
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    background-image: url("https://c1.staticflickr.com/2/1490/26157609400_94d5ddb7d7_b.jpg");
+    background-image: url(https://c1.staticflickr.com/2/1490/26157609400_94d5ddb7d7_b.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -22px -131px;
-    background-color: rgba(0, 0, 0, 0.1);
-    background-blend-mode: soft-light;
-    width: 100%;
+    width: 88%;
     height: 500px;
     color: white;
-    padding: 20px 90px;
+    padding: 20px 88px;
 }
 
 .mainnav{
     background: white;
-    height: 56px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .mainnav li a {
@@ -226,16 +229,36 @@ nav ul {
 }
 
 .mainnav li{
-    padding: 58.5px 35px;
+    padding: 55.5px 35px;
     margin-top: -37px;
+    border-right: 1px solid gray;
+}
+.datepicker{
+    border: 0;
+    height: 29px;
+    width: 137px;
+    padding: 0;
+    margin: 0;
 }
 
 #search{
     border: 0;
+    height: 29px;
+    width: 246px;
+    padding: 0;
+    margin: 0;
+}
+
+#searchbox{
+    border: 0;
+    height: 26px;
+    width: 655px;
+    padding: 38px
 }
 
 #searchbar{
-    padding: 34px 393px 0 0;
+    margin: 35px 127px 0 0;
+
 }
 
 
@@ -274,6 +297,18 @@ nav ul {
     justify-content: center;
 }
 
+.guest  {
+    border: none;
+    height:29px;
+}
+
+button  {
+    height: 29px;
+    width: 93px;
+    background: deeppink;
+    color: white;
+    margin: 38px 0 0 -91px;
+}
 /* =============================
   Host Section
    =============================*/
@@ -352,11 +387,36 @@ nav ul {
 }
 
 .thehost {
-    margin-top: 88px;
-    padding-bottom: 22px;
-    text-align: center;
+    margin: -245px 112px;
+    position: absolute;
 }
 
+.thehost img{
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.thehost h6{
+    font-size: 15px;
+    font-weight:bold;
+    color: white;
+    margin: 0;
+}
+.thehost p{
+    color: white;
+}
+
+.money{
+    background: rgba(0, 0 ,0, 0.6);
+    font-size: 15px;
+    color: white;
+    margin: 91px 0 0 -112px;
+    padding: 3px 2px ;
+    height: 25px;
+    width: 75px;
+}
 .padtop{
     padding-top:44px;
 }
@@ -369,16 +429,18 @@ nav ul {
   SLIDER STRUCTURE
    =============================*/
 .airback{
-    background-image: url("https://a0.muscache.com/airbnb/static/Live-There_Los_Angeles_Elliott_Pool_House_16-03-21_0137.jpg");
+    background-image: url(https://a0.muscache.com/airbnb/static/Live-There_Los_Angeles_Elliott_Pool_House_16-03-21_0137.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -22px -131px;
-    background-color: rgba(0, 0, 0, 0.1);
-    background-blend-mode: soft-light;
-    width: 100%;
+    width: 95%;
     height: 500px;
     color: white;
     padding: 20px 90px;
+}
+
+.adjust{
+    margin-left: 97px;
 }
 
 .community {
@@ -403,8 +465,170 @@ nav ul {
     font-weight: bold;
 }
 .comm-marg{
-    margin: 10px;
+    margin-right: 10px;
 }
+
+.comm-img{
+    width: 289px;
+    height: 492px;
+}
+
+.comm-text  {
+    margin-top: -507px;
+    position: absolute;
+    width: 288px;
+}
+
+.comm-text h4{
+    margin-top: 138px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.comm-text p{
+    color: white;
+}
+
+.traveling{
+    background: teal;
+    width: 79px;
+    margin: 15px 0 0 112px;
+}
+
+.business{
+    background: darkgray;
+    width: 130px;
+    margin: 15px 0 0 85px;
+}
+
+.hosting{
+    background: purple;
+    width: 79px;
+    margin: 15px 0 0 112px;
+
+}
+
+.comm-text a{
+    color: white;
+    text-decoration: underline ;
+}
+
+.comm-marg img:hover{
+    background: rgb(0, 0, 0);
+    opacity: 1;
+
+}
+
+.comm-img img{
+    overflow: hidden;
+    height: 100%;
+    max-width: 289px;
+    max-height: 492px;
+}
+
+footer{
+    width: 95%;
+    height: 500px;
+    color: white;
+    padding: 20px 90px;
+    display: flex;
+    flex-direction: column;
+    background: black;
+
+}
+
+footer section{
+    display: flex;
+}
+footer div,
+footer ul {
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer p{
+    color: white;
+    font-weight: bold;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+footer a:hover{
+    color: gray;
+}
+
+.social-media{
+    border-top: 1px solid gray;
+    padding: 20px;
+}
+.social-media div {
+    text-align: center;
+}
+.social-media ul{
+    flex-direction: row;
+}
+.social-media li{
+    padding-right: 20px;
+}
+
+
+footer i{
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.fa-facebook{
+    padding: 10px 15px;
+}
+.fa-google-plus{
+    padding: 10px 10px;
+}
+.fa-twitter{
+    padding: 10px 12px;
+}
+.fa-linkedin,
+.fa-pinterest,
+.fa-instagram{
+    padding: 10px 13px;
+}
+
+.fa-youtube-play{
+    padding: 10px 11px;
+}
+
+.copyright{
+    font-size: 10px;
+    color: gray;
+    margin-top: 40px;
+}
+
+select#soflow,{
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-color: darkgray, -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    color: black;
+    font-size: inherit;
+    margin: 20px;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 300px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -34,7 +34,7 @@
             </form>
             <ul>
                 <li><a class="border" href="https://www.airbnb.com/host?from_nav=1&link=1">Become a Host</a></li>
-                <li><a href="https://www.airbnb.com/help">Help</a></li>
+                <li class="help"><a href="https://www.airbnb.com/help">Help</a></li>
                 <li> <a href="#">Sign Up</a></li>
                 <li><a href="#">Log In</a></li>
             </ul>
@@ -49,12 +49,17 @@
                     </div>
                 </div>
                 <div class="searchtrip">
-                    <form id="searchbox" action=""><!-- look up jquery -->
+                    <form id="searchbox" action="">
                         <input id="search" type="text" placeholder="Where to?">
                         <input class="datepicker" type="date" placeholder="Check In">
                         <input class="datepicker" type="date" placeholder="Check Out">
-                        <p>Search</p>
+                        <select class ="guest">
+                            <option>1 Guest</option>
+                            <option>2 Guest</option>
+                            <option>3 Guest</option>
+                        </select>
                     </form>
+                    <button>Search</button>
                 </div>
         </section>
     </header>
@@ -100,7 +105,15 @@
                 <img class="wideimg" src="images/sanfran.jpeg" alt="">
             </div>
             <div class="padtop">
-                <img src="images/ahangama.jpeg" alt="">
+                <div>
+                    <img src="images/ahangama.jpeg" alt="">
+                </div>
+                <div class="thehost">
+                    <img src="images/lady.jpg" alt="">
+                    <h6>Hosted by Tina</h6>
+                    <p>Ahangama</p>
+                    <p class="money">$90</p>
+                </div>
             </div>
             <div>
                 <h3>Paris</h3>
@@ -115,7 +128,15 @@
                 <img src="images/wash.jpeg" alt="">
             </div>
             <div class="padtop">
-                <img src="images/chiang.jpeg" alt="">
+                <div>
+                    <img src="images/chiang.jpeg" alt="">
+                </div>
+                <div class="thehost">
+                    <img src="images/lady.jpg" alt="">
+                    <h6>Hosted by Danai</h6>
+                    <p>Chiang Mai</p>
+                    <p class="money">$120</p>
+                </div>
             </div>
             <div>
                 <h3>Los Angelas</h3>
@@ -176,102 +197,118 @@
     </section>
     <section class="sect-heading">
         <h2>Our community</h2>
-        <article>
+        <article class="adjust">
             <div class="comm-marg">
-                <img src="https://s-media-cache-ak0.pinimg.com/564x/02/f3/e9/02f3e9eb156eda83f71a2be36d8921cc.jpg" alt="">
+                <div class="comm-img">
+                    <img src="https://s-media-cache-ak0.pinimg.com/564x/02/f3/e9/02f3e9eb156eda83f71a2be36d8921cc.jpg" alt="">
+                </div>
                 <div class="community">
                     <p>Create</p>
                     <h4>Make Airbnb yours</h4>
                     <p>Create your Symbol, Tell your Story</p>
                 </div>
             </div>
-            <div>
-                <div class="comm-marg">
+            <div class="comm-marg">
+                <div class="comm-img">
                     <img src="http://blog.airbnb.com/wp-content/uploads/2015/06/1600x900_Pride-Portrait_Kai-Paul_San-Francisco_Elliott_20150529_0653-800x550.jpg?3c10be" alt="">
                 </div>
-                <div>
-                    <p>Traveling</p>
+                <div class="comm-text">
+                    <p class="traveling">Traveling</p>
                     <h4>Gary & Lianne</h4>
                     <p>Across an ocean or across town, Garry & Lianne are always in search of local experiences.</p>
-                    <p>Learn more about travel on Airbn.b</p>
+                    <a href="#">Learn more about travel on Airbnb</a>
                 </div>
             </div>
-            <div>
-                <div class="comm-marg">
+            <div class="comm-marg">
+                <div class="comm-img">
                     <img src="https://a0.muscache.com/airbnb/static/business_travel/traveler_landing/group-meeting-987cee7489652f5315fbca1ac36d0f1c.jpg" alt="">
                 </div>
-                <div>
-                    <p>Business Travel</p>
+                <div class="comm-text">
+                    <p class="business">Business Travel</p>
                     <h4>Airbnb for Business</h4>
                     <p>Feel at home, wherever your work take you.</p>
-                    <p>Get your team on Airbnb.</p>
+                    <a href="#">Get your team on Airbnb.</a>
                 </div>
             </div>
-            <div>
-                <div class="comm-marg">
+            <div class="comm-marg">
+                <div class="comm-img">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLrymSG24fyJN9dxODfyqtdKTdoqSSjEJhEDiiuDOwIlBkQUXU" alt="">
                 </div>
-                <div>
-                    <p>Hosting</p>
+                <div class="comm-text">
+                    <p class="hosting">Hosting</p>
                     <h4>Patricia</h4>
                     <p>A professional photographer, Patricia loves helping guests explore Shanghai's art scene.</p>
-                    <p>Learn more about hosing on Airbnb.</p>
+                    <a href="#">Learn more about hosing on Airbnb.</a>
                 </div>
             </div>
         </article>
     </section>
     <footer>
-        <form action=""></form>
-        <form action=""></form>
-        <div>
-            <p>Company</p>
-            <ul>
-                <li>About</li>
-                <li> Careers</li>
-                <li> Press</li>
-                <li> Blog</li>
-                <li>Help</li>
-                <li>Policies</li>
-                <li>Disaster Response</li>
-                <li>Terms & Privacy</li>
-            </ul>
-        </div>
-        <div>
-            <p>Discover</p>
-            <ul>
-                <li>Trust & Safety</li>
-                <li>Travel Credit</li>
-                <li>Gift Cards</li>
-                <li>Airbnb Picks</li>
-                <li>Mobile</li>
-                <li>Airbnb Action</li>
-                <li>Business Travel</li>
-                <li>Site Map</li>
-            </ul>
-        </div>
-        <div>
-            <p>Hosting</p>
-            <ul>
-                <li>Why Host</li>
-                <li>Hospitality</li>
-                <li>Responsible Hosting</li>
-                <li>Home Safety</li>
-                <li>Instant Book</li>
-            </ul>
-        </div>
-        <div>
-            <p></p>
-            <ul>
-                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-                <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
-                <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
-                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-            </ul>
-        </div>
-        <p>Airbnb, Inc</p>
+        <section>
+                <div>
+                    <select id="soflow">
+                        <option>English</option>
+                        <option>Espanol</option>
+                        <option>Norsk</option>
+                    </select>
+                    <select id="soflow">
+                        <option>USD</option>
+                        <option>RON</option>
+                        <option>MAD</option>
+                    </select>
+                </div>
+                <div>
+                <ul>
+                    <p>Company</p>
+                    <a href="#">About</a>
+                    <a href="#"> Careers</a>
+                    <a href="#"> Press</a>
+                    <a href="#"> Blog</a>
+                    <a href="#">Help</a>
+                    <a href="#">Policies</a>
+                    <a href="#">Disaster Response</a>
+                    <a href="#">Terms & Privacy</a>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <p>Discover</p>
+                    <a href="#">Trust & Safety</a>
+                    <a href="#">Travel Credit</a>
+                    <a href="#">Gift Cards</a>
+                    <a href="#">Airbnb Picks</a>
+                    <a href="#">Mobile</a>
+                    <a href="#">Airbnb Action</a>
+                    <a href="#">Business Travel</a>
+                    <a href="#">Site Map</a>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <p>Hosting</p>
+                    <a href="#">Why Host</a>
+                    <a href="#">Hospitality</a>
+                    <a href="#">Responsible Hosting</a>
+                    <a href="#">Home Safety</a>
+                    <a href="#">Instant Book</a>
+                </ul>
+            </div>
+        </section>
+        <section class="social-media">
+            <div>
+                <p>Join Us On</p>
+                <ul>
+                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                </ul>
+                <p class="copyright">&copy;Airbnb, Inc</p>
+            </div>
+        </section>
     </footer>
 </div>
 
