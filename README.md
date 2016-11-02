@@ -3,7 +3,7 @@
 A static version of airbnb.com 
 **Link to project:** http://airbnb-mock.bitballoon.com/
 
-![alt tag](http://imgur.com/YBBqCVr)
+![alt tag](http://i.imgur.com/YBBqCVr.png?1)
 
 
 
