@@ -94,7 +94,6 @@ a{
 body{
     background:#EDEFED;
     margin: 0 auto;
-    max-width: 1280px;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -205,11 +204,8 @@ nav ul {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    background-image: url(https://c1.staticflickr.com/2/1490/26157609400_94d5ddb7d7_b.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -22px -131px;
-    width: 88%;
+    background: url(https://c1.staticflickr.com/2/1490/26157609400_94d5ddb7d7_b.jpg)no-repeat center center fixed;
+    background-size: cover;;
     height: 500px;
     color: white;
     padding: 20px 88px;
@@ -292,7 +288,7 @@ nav ul {
 
 .searchtrip{
     background: rgba(0, 0, 0, 0.7);
-    margin: 0 -68px -20px -91px;
+    margin: 0 -100px -20px -91px;
     display: flex;
     justify-content: center;
 }
@@ -439,10 +435,6 @@ button  {
     padding: 20px 90px;
 }
 
-.adjust{
-    margin-left: 97px;
-}
-
 .community {
     margin-top: -308px;
     color: deeppink;
@@ -468,13 +460,9 @@ button  {
     margin-right: 10px;
 }
 
-.comm-img{
-    width: 289px;
-    height: 492px;
-}
 
 .comm-text  {
-    margin-top: -507px;
+    margin-top: -359px;;
     position: absolute;
     width: 288px;
 }
@@ -514,17 +502,14 @@ button  {
     text-decoration: underline ;
 }
 
-.comm-marg img:hover{
-    background: rgb(0, 0, 0);
+.comm-marg div img:hover{
+    background: black;
     opacity: 1;
 
 }
 
 .comm-img img{
-    overflow: hidden;
-    height: 100%;
     max-width: 289px;
-    max-height: 492px;
 }
 
 footer{
