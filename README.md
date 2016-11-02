@@ -1,9 +1,11 @@
 # Static Airbnb Website
 
 A static version of airbnb.com 
-**Link to project:** http://airbnb-mock.bitballoon.com/
+[1]:**Link to project:** http://airbnb-mock.bitballoon.com/
 
 ![alt tag](http://i.imgur.com/YBBqCVr.png?1)
+![alt tag](http://i.imgur.com/eRgLACG.png?1)
+![alt tag](http://i.imgur.com/eRgLACG.png?1)
 
 
 
