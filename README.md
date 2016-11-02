@@ -4,8 +4,8 @@ A static version of airbnb.com
 ###**Link to project:** http://airbnb-mock.bitballoon.com/
 
 ![alt tag](http://i.imgur.com/YBBqCVr.png?1)
-![alt tag](http://i.imgur.com/eRgLACG.png?1)
-![alt tag](http://i.imgur.com/A0BSeXk.png?1)
+![alt tag](http://i.imgur.com/eRgLACG.png?2)
+![alt tag](http://i.imgur.com/1Y3ntbW.png?1)
 
 
 
